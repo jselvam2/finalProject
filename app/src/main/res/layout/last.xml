@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musicApp"
+    >
+
+    <TextView
+        android:id="@+id/yourPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Playlist"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:fontFamily="@font/audiowide"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/tryAgainButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Try Again"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="580dp" />
+</android.support.constraint.ConstraintLayout>
