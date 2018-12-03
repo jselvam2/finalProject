@@ -6,23 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/musicapp">
 
-    <TextView
-        android:id="@+id/yourPlaylist"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginRight="61dp"
-        android:layout_marginBottom="466dp"
-        android:text="Your Playlist"
-        android:textColor="@color/colorAccent"
-        android:textSize="36sp"
-        app:fontFamily="@font/audiowide"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>

@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/musicApp"
-    >
+    android:background="@drawable/musicapp">
 
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="69dp"
-        android:layout_height="57dp"
-        tools:layout_editor_absoluteX="338dp"
-        tools:layout_editor_absoluteY="32dp" />
+        android:layout_width="204dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="241dp"
-        android:layout_height="110dp"
+        android:layout_width="226dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
         android:text="Calculating"
         android:textColor="@color/colorAccent"
         android:textSize="36sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
