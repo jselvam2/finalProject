@@ -7,10 +7,10 @@
     android:background="@drawable/musicapp">
 
     <TextView
-        android:id="@+id/genrePop"
+        android:id="@+id/moodHype"
         android:layout_width="200dp"
         android:layout_height="44dp"
-        android:text="Pop"
+        android:text="Hype"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
@@ -18,10 +18,10 @@
         tools:layout_editor_absoluteY="357dp" />
 
     <TextView
-        android:id="@+id/genreEDM"
+        android:id="@+id/moodChill"
         android:layout_width="200dp"
         android:layout_height="44dp"
-        android:text="EDM"
+        android:text="Chill"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
@@ -29,15 +29,15 @@
         tools:layout_editor_absoluteY="443dp" />
 
     <TextView
-        android:id="@+id/genreAltrernative"
+        android:id="@+id/moodSad"
         android:layout_width="200dp"
-        android:layout_height="44dp"
-        android:text="Alternative"
+        android:layout_height="41dp"
+        android:text="Sad"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteY="282dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -49,7 +49,7 @@
         android:inputType="textMultiLine|textLongMessage|textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="true"
-        android:text="@string/what_is_your_favorite_genre_of_music"
+        android:text="What is your current mood?"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorAccent"
         android:textIsSelectable="false"
@@ -61,18 +61,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/genreA"
+        android:id="@+id/moodA"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
-        android:textAllCaps="true"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="193dp" />
 
     <Button
-        android:id="@+id/genreB"
+        android:id="@+id/moodB"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,7 +81,7 @@
         tools:layout_editor_absoluteY="279dp" />
 
     <Button
-        android:id="@+id/genreC"
+        android:id="@+id/moodC"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,7 +91,7 @@
         tools:layout_editor_absoluteY="358dp" />
 
     <Button
-        android:id="@+id/genreD"
+        android:id="@+id/moodD"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,10 +101,10 @@
         tools:layout_editor_absoluteY="436dp" />
 
     <TextView
-        android:id="@+id/genreHipHop"
+        android:id="@+id/moodHappy"
         android:layout_width="200dp"
         android:layout_height="44dp"
-        android:text="Hip-Hop"
+        android:text="Happy"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
