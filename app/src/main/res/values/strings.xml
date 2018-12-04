@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="get_started">Get Started</string>
+    <string name="musicmatch">MusicMatch</string>
+    <string name="todo">TODO</string>
+    <string name="get_started">Get Started</string>
+    <string name="musicmatch">MusicMatch</string>
+    <string name="r_b"><![CDATA[R & B]]></string>
+    <string name="what_is_your_favorite_genre_of_music">What is your favorite genre of music?</string>
+    <string name="pop">POP</string>
+    <string name="rap">RAP</string>
+    <string name="rock">ROCK</string>
 </resources>
