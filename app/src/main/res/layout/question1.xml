@@ -89,45 +89,53 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginBottom="34dp"
         android:text="A"
         android:textAllCaps="true"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/genreB"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/genreB"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginBottom="27dp"
         android:text="B"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/genreC"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/genreC"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginBottom="26dp"
         android:text="C"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/genreD"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/genreD"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginBottom="79dp"
         android:text="D"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/genreHipHop"

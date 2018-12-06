@@ -32,41 +32,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button A = findViewById(R.id.genreA);
-        Button B = findViewById(R.id.genreB);
-        Button C = findViewById(R.id.genreC);
-        Button D = findViewById(R.id.genreD);
-
-        A.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG3.class));
-            }
-        });
-        B.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG3.class));
-            }
-        });
-        C.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG3.class));
-            }
-        });
-        D.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG3.class));
-            }
-        });
+//        Button A = findViewById(R.id.genreA);
+//        Button B = findViewById(R.id.genreB);
+//        Button C = findViewById(R.id.genreC);
+//        Button D = findViewById(R.id.genreD);
+//
+//        A.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), PG3.class));
+//            }
+//        });
+//        B.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), PG3.class));
+//            }
+//        });
+//        C.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), PG3.class));
+//            }
+//        });
+//        D.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), PG3.class));
+//            }
+//        });
     }
-
-    public void question1() {
-
-        Intent intent = new Intent(this, ActivityPG2.class);
-        startActivity(intent);
-
-    }
+//
+//    public void question1() {
+//
+//        Intent intent = new Intent(this, ActivityPG2.class);
+//        startActivity(intent);
+//
+//    }
 }
