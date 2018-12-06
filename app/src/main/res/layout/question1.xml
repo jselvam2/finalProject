@@ -10,40 +10,63 @@
         android:id="@+id/genrePop"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
         android:text="Pop"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genreEDM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genreC"
+        app:layout_constraintTop_toBottomOf="@+id/genreAltrernative" />
 
     <TextView
         android:id="@+id/genreEDM"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="80dp"
         android:text="EDM"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="443dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genreD"
+        app:layout_constraintTop_toBottomOf="@+id/genrePop" />
 
     <TextView
         android:id="@+id/genreAltrernative"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
         android:text="Alternative"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genrePop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genreB"
+        app:layout_constraintTop_toBottomOf="@+id/genreHipHop" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="360dp"
         android:layout_height="0dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="57dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textMultiLine|textLongMessage|textPersonName"
@@ -55,6 +78,7 @@
         android:textIsSelectable="false"
         android:textStyle="bold"
         android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/genreA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,51 +89,62 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
         android:text="A"
         android:textAllCaps="true"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genreB"
+        tools:layout_editor_absoluteX="25dp" />
 
     <Button
         android:id="@+id/genreB"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
         android:text="B"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genreC"
+        tools:layout_editor_absoluteX="25dp" />
 
     <Button
         android:id="@+id/genreC"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
         android:text="C"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genreD"
+        tools:layout_editor_absoluteX="25dp" />
 
     <Button
         android:id="@+id/genreD"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
         android:text="D"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
 
     <TextView
         android:id="@+id/genreHipHop"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
         android:text="Hip-Hop"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/genreAltrernative"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genreA"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </android.support.constraint.ConstraintLayout>
