@@ -67,7 +67,7 @@
         android:inputType="textMultiLine|textLongMessage|textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="true"
-        android:text="What are you?"
+        android:text="Where are you?"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorAccent"
         android:textIsSelectable="false"
