@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityPG2 extends AppCompatActivity {
+public class PG2 extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

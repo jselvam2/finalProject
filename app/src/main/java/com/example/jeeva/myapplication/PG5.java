@@ -1,44 +1,43 @@
 package com.example.jeeva.myapplication;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class PG3 extends AppCompatActivity {
+public class PG5 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question2);
+        setContentView(R.layout.question4);
 
-        Button A = findViewById(R.id.ageA);
-        Button B = findViewById(R.id.ageB);
-        Button C = findViewById(R.id.ageC);
-        Button D = findViewById(R.id.ageD);
+        Button A = findViewById(R.id.whereA);
+        Button B = findViewById(R.id.whereB);
+        Button C = findViewById(R.id.whereC);
+        Button D = findViewById(R.id.whereD);
 
         A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG4.class));
+                startActivity(new Intent(getApplicationContext(), PG6.class));
             }
         });
         B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG4.class));
+                startActivity(new Intent(getApplicationContext(), PG6.class));
             }
         });
         C.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG4.class));
+                startActivity(new Intent(getApplicationContext(), PG6.class));
             }
         });
         D.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PG4.class));
+                startActivity(new Intent(getApplicationContext(), PG6.class));
             }
         });
 

@@ -10,34 +10,52 @@
         android:id="@+id/moodHype"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="42dp"
         android:text="Hype"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodChill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moodC" />
 
     <TextView
         android:id="@+id/moodChill"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="80dp"
         android:text="Chill"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="443dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moodD" />
 
     <TextView
         android:id="@+id/moodSad"
         android:layout_width="200dp"
         android:layout_height="41dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="34dp"
         android:text="Sad"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodHype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moodB" />
 
     <EditText
         android:id="@+id/editText"
@@ -55,6 +73,7 @@
         android:textIsSelectable="false"
         android:textStyle="bold"
         android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/moodA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,50 +84,79 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="34dp"
         android:text="A"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodB"
+        app:layout_constraintEnd_toStartOf="@+id/moodHappy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/moodB"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="27dp"
         android:text="B"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodC"
+        app:layout_constraintEnd_toStartOf="@+id/moodSad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodA" />
 
     <Button
         android:id="@+id/moodC"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="26dp"
         android:text="C"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodD"
+        app:layout_constraintEnd_toStartOf="@+id/moodHype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodB" />
 
     <Button
         android:id="@+id/moodD"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="79dp"
         android:text="D"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/moodChill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodC" />
 
     <TextView
         android:id="@+id/moodHappy"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="45dp"
         android:text="Happy"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moodSad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moodA"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </android.support.constraint.ConstraintLayout>

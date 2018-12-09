@@ -10,34 +10,55 @@
         android:id="@+id/age3644"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="42dp"
         android:text="36-44"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toTopOf="@+id/age45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageC"
+        app:layout_constraintTop_toBottomOf="@+id/age2535" />
 
     <TextView
         android:id="@+id/age45"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="80dp"
         android:text="45+"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="443dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageD"
+        app:layout_constraintTop_toBottomOf="@+id/age3644" />
 
     <TextView
         android:id="@+id/age2535"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="34dp"
         android:text="25-35"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toTopOf="@+id/age3644"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageB"
+        app:layout_constraintTop_toBottomOf="@+id/age1824" />
 
     <EditText
         android:id="@+id/editText"
@@ -55,6 +76,7 @@
         android:textIsSelectable="false"
         android:textStyle="bold"
         android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/ageA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,52 +85,81 @@
     <Button
         android:id="@+id/ageA"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="98dp"
         android:text="A"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ageB"
+        app:layout_constraintEnd_toStartOf="@+id/age1824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/ageB"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="34dp"
         android:text="B"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ageC"
+        app:layout_constraintEnd_toStartOf="@+id/age2535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageA" />
 
     <Button
         android:id="@+id/ageC"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="27dp"
         android:text="C"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ageD"
+        app:layout_constraintEnd_toStartOf="@+id/age3644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageB" />
 
     <Button
         android:id="@+id/ageD"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="79dp"
         android:text="D"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/age45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageC" />
 
     <TextView
         android:id="@+id/age1824"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="42dp"
         android:text="18-24"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:fontFamily="@font/audiowide"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/age2535"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageA"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </android.support.constraint.ConstraintLayout>
