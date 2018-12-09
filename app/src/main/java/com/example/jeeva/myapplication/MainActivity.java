@@ -11,11 +11,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> responses = new ArrayList<>();
-    private static int edm;
-    private static int happy;
-    private static int pop;
-    private static int sad;
-    private static int oldies;
+    private static int edm = 0;
+    private static int happy = 0;
+    private static int pop = 0;
+    private static int sad = 0;
+    private static int oldies = 0;
 
     public int getEdm() {
         return edm;
