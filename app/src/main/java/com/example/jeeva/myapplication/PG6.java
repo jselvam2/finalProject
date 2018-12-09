@@ -10,5 +10,21 @@ public class PG6 extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question5);
+
+        Button enter = findViewById(R.id.Enter);
+        Button skip = findViewById(R.id.skip);
+
+        enter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), PG7.class));
+            }
+        });
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), PG7.class));
+            }
+        });
     }
 }
