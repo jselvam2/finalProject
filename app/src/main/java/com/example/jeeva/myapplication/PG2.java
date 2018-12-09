@@ -48,7 +48,9 @@ public class PG2 extends MainActivity {
             public void onClick(View v) {
                 setEdm(getEdm() + 5);
                 setOldies(getOldies() - 1);
-                setPop(getSad() - 1);
+                setPop(getPop() - 1);
+                setSad(getSad() - 1);
+                setHappy(getHappy() - 1);
                 startActivity(new Intent(getApplicationContext(), PG3.class));
             }
         });
