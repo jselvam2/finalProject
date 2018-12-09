@@ -11,7 +11,44 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> responses = new ArrayList<>();
+    private static int edm;
+    private static int happy;
+    private static int pop;
+    private static int sad;
+    private static int oldies;
 
+    public int getEdm() {
+        return edm;
+    }
+    public int getHappy() {
+        return happy;
+    }
+    public int getPop() {
+        return pop;
+    }
+    public int getSad() {
+        return sad;
+    }
+
+    public int getOldies() {
+        return oldies;
+    }
+    public void setEdm(int setEdm) {
+        edm = setEdm;
+    }
+    public void setHappy(int setHappy) {
+        happy = setHappy;
+    }
+
+    public static void setPop(int setPop) {
+        pop = setPop;
+    }
+    public void setSad(int setSad) {
+        sad = setSad;
+    }
+    public void setOldies(int setOldies) {
+        oldies = setOldies;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
