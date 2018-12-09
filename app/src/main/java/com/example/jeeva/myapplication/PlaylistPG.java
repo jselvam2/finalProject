@@ -5,9 +5,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Window;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collection;
 
 
-    public class PlaylistPG extends Activity {
+    public class PlaylistPG extends MainActivity {
+
+        ArrayList<Integer> values = new ArrayList<Integer>();
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
