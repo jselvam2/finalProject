@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<String> responses = new ArrayList<>();
+    private static ArrayList<String> Playlists = new ArrayList<>();
     private static int edm = 0;
     private static int happy = 0;
     private static int pop = 0;
