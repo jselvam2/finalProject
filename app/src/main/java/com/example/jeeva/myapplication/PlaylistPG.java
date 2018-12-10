@@ -19,16 +19,16 @@ public class PlaylistPG extends MainActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             String playlist = "";
-            HashMap<String,Integer> map=new HashMap<String, Integer>();
-            map.put("edm", getEdm());
-            map.put("happy", getHappy());
-            map.put("pop", getPop());
-            map.put("sad", getSad());
-            map.put("oldies", getOldies());
-            int maxValueInMap=(Collections.max(map.values()));
-            for (Map.Entry<String, Integer> entry : map.entrySet()) {
-                if (entry.getValue() == maxValueInMap) {
-                    playlist = entry.getKey();
+            HashMap<String,Integer> type = new HashMap<String, Integer>();
+            type.put("edm", getEdm());
+            type.put("happy", getHappy());
+            type.put("pop", getPop());
+            type.put("sad", getSad());
+            type.put("oldies", getOldies());
+            int maxVal=(Collections.max(type.values()));
+            for (Map.Entry<String, Integer> input : type.entrySet()) {
+                if (input.getValue() == maxVal) {
+                    playlist = input.getKey();
                     break;
                 }
             }
