@@ -7,15 +7,21 @@ import android.content.Intent;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static ArrayList<String> Playlists = new ArrayList<>();
+    private static HashMap<String,String> Playlists =new HashMap<String, String>();
+
     private static int edm = 0;
     private static int happy = 0;
     private static int pop = 0;
     private static int sad = 0;
     private static int oldies = 0;
+
+    public static HashMap<String,String> getPlaylists() {
+        return Playlists;
+    }
 
     public int getEdm() {
         return edm;
@@ -52,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Playlists.put("edm", "");
+        Playlists.put("happy", "");
+        Playlists.put("pop", "");
+        Playlists.put("sad", "");
+        Playlists.put("oldies", "");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
